@@ -1,18 +1,18 @@
 package Task_2;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+//import com.google.gson.Gson;
+//import com.google.gson.GsonBuilder;
 import java.io.*;
 import java.util.ArrayList;
 
 
 public class ParserToJson {
-    private File inputFile = new File("C:\\Users\\Lev\\Desktop\\file.txt");
-    private File outputFile = new File("C:\\Users\\Lev\\Desktop\\user.json");
+    private File inputFile = new File("personFile.txt");
+    private File outputFile = new File("user.json");
     private ArrayList<Person> users = new ArrayList<>();
 
 
-    private void readFile() {
+    public void readFile() {
         try (FileReader reader = new FileReader(inputFile);
              BufferedReader bufferedReader = new BufferedReader(reader)) {
             String line;
@@ -36,7 +36,7 @@ public class ParserToJson {
         }
     }
 
-    private void writeToJson() {
+    public void writeToJson() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(users);
 

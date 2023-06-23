@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class PopularWordsCounter {
-    private File file = new File("C:\\Users\\Lev\\Desktop\\words.txt");
+    private File file = new File("words.txt");
 
 
     public void countPopularWords() {

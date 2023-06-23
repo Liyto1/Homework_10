@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TelephoneNumberParser {
-    private File file = new File("C:\\Users\\...\\Desktop\\file.txt");
+    private File file = new File("file.txt");
     private ArrayList<String> numbers = new ArrayList<>();
 
     public void validNumbers() {
